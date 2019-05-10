@@ -6,7 +6,7 @@ class Shot(Sprite):
     def __init__(self):
         imageUrl = "images/game/shot.png"
         super().__init__(imageUrl)
-        self.speed = 150 * settings.game_speed
+        self.speed = 200 * settings.game_speed
 
     def render(self):
         self.updateLogic()

@@ -6,7 +6,7 @@ from invaders.components.shot import Shot
 class Spaceship(Sprite):
     def __init__(self, window, imageUrl):
         super().__init__(imageUrl)
-        self.set_position(window.width/2 - self.width/2, window.height * 0.8)
+        self.set_position(window.width/2 - self.width/2, window.height * 0.85)
         self.window = window
         self.keyboard = window.get_keyboard()
         self.speed = 100 * settings.game_speed
