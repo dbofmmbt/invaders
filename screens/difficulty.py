@@ -1,7 +1,8 @@
 from invaders.button import Button
 import invaders.settings as settings
 
-class DifficultyContainer:
+
+class Difficulty:
     def __init__(self, window):
         self.window = window
         self.window.set_title("Invaders Dificuldade")

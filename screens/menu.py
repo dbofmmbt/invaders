@@ -29,9 +29,9 @@ class Menu:
             from invaders.screens.game import Game
             settings.current_container = Game(self.window)
         elif self.difficulty.clicked():
-            from invaders.screens.difficultyContainer import DifficultyContainer
+            from invaders.screens.difficulty import Difficulty
             self.window.set_background_color(settings.backgroundColor)
-            settings.current_container = DifficultyContainer(self.window)
+            settings.current_container = Difficulty(self.window)
         elif self.rank.clicked():
             pass
         elif self.quit.clicked():
