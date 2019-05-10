@@ -1,2 +1,4 @@
 global current_container
 global difficulty
+global delta_time
+global game_speed
