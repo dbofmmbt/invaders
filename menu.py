@@ -37,7 +37,7 @@ class Menu:
         elif self.rank.clicked():
             pass
         elif self.quit.clicked():
-            settings.exit_game = True
+            self.window.close()
         else:
             return
         # Algum botão foi clicado para chegar até aqui.
