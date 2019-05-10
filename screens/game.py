@@ -1,4 +1,5 @@
 import invaders.settings as settings
+from invaders.components.spaceship import Spaceship
 
 
 class Game:
@@ -7,10 +8,14 @@ class Game:
         self.window.set_title("INVAAAAAADERS!")
         self.keyboard = window.get_keyboard()
 
-    def render(self):
-        self.window.set_background_color(settings.backgroundColor)
+        self.ship = Spaceship(window, "images/game/spaceship.png")
 
-    def update(self):
+    def render(self):
+        self.updateLogic()
+        self.window.set_background_color(settings.backgroundColor)
+        self.ship.render()
+
+    def updateLogic(self):
         if self.keyboard.key_pressed("ESC"):
             from invaders.screens.menu import Menu
             settings.current_container = Menu(self.window)

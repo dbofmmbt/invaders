@@ -11,6 +11,5 @@ settings.difficulty = 1
 settings.backgroundColor = (33, 33, 33)
 
 while True:
-    settings.current_container.update()
     settings.current_container.render()
     window.update()

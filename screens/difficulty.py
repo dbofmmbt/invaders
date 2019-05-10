@@ -19,7 +19,7 @@ class Difficulty:
         half_width = self.window.width / 2
         button.set_position(half_width - button.width/2, self.window.height * heightPercentage)
 
-    def update(self):
+    def updateLogic(self):
         from invaders.screens.game import Game
         if self.easy.clicked():
             settings.difficulty = 1
@@ -34,6 +34,8 @@ class Difficulty:
         print(settings.difficulty)
 
     def render(self):
+        self.updateLogic()
+
         self.window.set_background_color(settings.backgroundColor)
         self.easy.render()
         self.medium.render()

@@ -18,13 +18,15 @@ class Menu:
         self.put_button_on_position(self.quit, 0.73)
 
     def render(self):
+        self.updateLogic()
+
         self.window.set_background_color(settings.backgroundColor)
         self.play.render()
         self.difficulty.render()
         self.rank.render()
         self.quit.render()
 
-    def update(self):
+    def updateLogic(self):
         if self.play.clicked():
             from invaders.screens.game import Game
             settings.current_container = Game(self.window)
