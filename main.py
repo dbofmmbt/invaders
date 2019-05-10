@@ -1,4 +1,4 @@
-from menu import Menu
+from invaders.screens.menu import Menu
 from PPlay.window import Window
 import invaders.settings as settings
 

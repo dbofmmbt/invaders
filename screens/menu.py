@@ -1,5 +1,3 @@
-from PPlay.window import *
-from PPlay.sprite import *
 from invaders.button import Button
 import invaders.settings as settings
 from time import sleep
@@ -28,10 +26,10 @@ class Menu:
 
     def update(self):
         if self.play.clicked():
-            from invaders.game import Game
+            from invaders.screens.game import Game
             settings.current_container = Game(self.window)
         elif self.difficulty.clicked():
-            from invaders.difficultyContainer import DifficultyContainer
+            from invaders.screens.difficultyContainer import DifficultyContainer
             self.window.set_background_color(settings.backgroundColor)
             settings.current_container = DifficultyContainer(self.window)
         elif self.rank.clicked():

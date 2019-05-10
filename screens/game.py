@@ -1,4 +1,3 @@
-from PPlay.window import *
 import invaders.settings as settings
 
 
@@ -13,5 +12,5 @@ class Game:
 
     def update(self):
         if self.keyboard.key_pressed("ESC"):
-            from invaders.menu import Menu
+            from invaders.screens.menu import Menu
             settings.current_container = Menu(self.window)

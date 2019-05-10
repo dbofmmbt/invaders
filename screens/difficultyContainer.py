@@ -19,7 +19,7 @@ class DifficultyContainer:
         button.set_position(half_width - button.width/2, self.window.height * heightPercentage)
 
     def update(self):
-        from invaders.game import Game
+        from invaders.screens.game import Game
         if self.easy.clicked():
             settings.difficulty = 1
         elif self.medium.clicked():
