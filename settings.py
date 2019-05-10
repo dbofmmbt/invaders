@@ -1,0 +1,3 @@
+global current_container
+global exit_game
+global difficulty
